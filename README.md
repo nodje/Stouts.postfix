@@ -16,7 +16,7 @@ Only tested on ubuntu for now.
 postfix_enabled: yes # The role is enabled
 
 postfix_smtpd_use_tls: yes
-postfix_myhostname: "{{inventory_hostname}}"
+postfix_myhostname: "{{ domain }}"
 postfix_myorigin: $myhostname
 postfix_smtp_sasl_auth_enable: yes
 postfix_smtp_tls_cafile: "/etc/ssl/certs/Thawte_Premium_Server_CA.pem"
